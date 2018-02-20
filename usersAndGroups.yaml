@@ -1,0 +1,23 @@
+# Stack Name: AccountGroupsConfig
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "Creates users and groups"
+Resources:
+  
+  UserPeter:
+    Type: "AWS::IAM::User"
+    Properties: 
+      Groups:
+        - "Band"
+      UserName: "Peter"
+
+  UserPaul:
+    Type: "AWS::IAM::User"
+    Properties: 
+      Groups:
+        - "Band"
+      UserName: "Paul"
+
+  GroupBand:
+    Type: "AWS::IAM::Group"
+    Properties:
+      GroupName: Band
