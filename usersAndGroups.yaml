@@ -17,6 +17,13 @@ Resources:
         - "Band"
       UserName: "Paul"
 
+  UserMary:
+    Type: "AWS::IAM::User"
+    Properties: 
+      Groups:
+        - "Band"
+      UserName: "Mary"
+
   GroupBand:
     Type: "AWS::IAM::Group"
     Properties:
